@@ -1,0 +1,23 @@
+extends layout
+
+block header
+  div.navbar
+    div.menu-text メモ帳
+
+block content
+  div.container
+  h1= pageTitle
+  hr
+  div.notification
+    p 本当にこのメモを削除しますか？
+  table.table
+    tr
+      td タイトル
+      td= targetMemo.title
+    tr
+      td メモ本文
+      td= targetMemo.memo
+  hr
+  form(method="post", action="/delete/#{targetMemo.id}")
+    button(type="submit").button 削除
+    a(href="/").button 戻る

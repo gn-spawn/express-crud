@@ -374,6 +374,17 @@ duplexer2@0.0.2:
   dependencies:
     readable-stream "~1.1.9"
 
+eachr@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/eachr/-/eachr-3.2.0.tgz#2c35e43ea086516f7997cf80b7aa64d55a4a4484"
+  dependencies:
+    editions "^1.1.1"
+    typechecker "^4.3.0"
+
+editions@^1.1.1, editions@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/editions/-/editions-1.3.3.tgz#0907101bdda20fac3cbe334c27cbd0688dc99a5b"
+
 editorconfig@^0.13.2:
   version "0.13.3"
   resolved "https://registry.yarnpkg.com/editorconfig/-/editorconfig-0.13.3.tgz#e5219e587951d60958fd94ea9a9a008cdeff1b34"
@@ -537,6 +548,14 @@ extglob@^0.3.1:
   dependencies:
     is-extglob "^1.0.0"
 
+extract-opts@^3.2.0:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/extract-opts/-/extract-opts-3.3.1.tgz#5abbedc98c0d5202e3278727f9192d7e086c6be1"
+  dependencies:
+    eachr "^3.2.0"
+    editions "^1.1.1"
+    typechecker "^4.3.0"
+
 fancy-log@^1.1.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/fancy-log/-/fancy-log-1.3.0.tgz#45be17d02bb9917d60ccffd4995c999e6c8c9948"
@@ -673,6 +692,12 @@ get-caller-file@^1.0.1:
 get-stream@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-3.0.0.tgz#8e943d1358dc37555054ecbe2edb05aa174ede14"
+
+getmac:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/getmac/-/getmac-1.2.1.tgz#0d095fd0627850043eac1dcfa0b120bbdc1426d1"
+  dependencies:
+    extract-opts "^3.2.0"
 
 glob-base@^0.3.0:
   version "0.3.0"
@@ -2095,6 +2120,12 @@ type-is@~1.6.15:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.15"
+
+typechecker@^4.3.0:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/typechecker/-/typechecker-4.4.1.tgz#f97b95f51b038417212d677d45a373ee7bced7e6"
+  dependencies:
+    editions "^1.3.3"
 
 uglify-js@~2.2.5:
   version "2.2.5"

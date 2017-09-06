@@ -1,0 +1,29 @@
+extends layout
+
+block header
+  div.navbar
+    div.menu-text メモ帳超特急
+
+block content
+  div
+    h1.section= pageTitle
+    hr
+    div.container
+      table.table
+        tr
+          td
+            strong タイトル
+          td= targetMemo.title
+        tr
+          td
+            strong メモ本文
+          td= targetMemo.memo
+        tr
+          td
+            strong 作成日
+          td= targetMemo.created
+        tr
+          td
+            strong 更新日
+          td= targetMemo.modified
+      a(href="/").button 戻る
