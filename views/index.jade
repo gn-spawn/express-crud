@@ -22,8 +22,8 @@ block content
             tr
               td
                 a.tag(href="/#{memo.id}") #{memo.title}
-              td= memo.created
-              td= memo.modified
+              td= memo.createdAt
+              td= memo.updatedAt
               td
                 a(href="/edit/#{memo.id}").button 編集
               td
